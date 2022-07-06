@@ -8,7 +8,7 @@ async function getJoke(){
         }
     });
     var jokeObject = await jokeData.json(); 
-    console.log(jokeObject);
+    jokeText.innerHTML = jokeObject.joke;
 }
 
 // function getJoke(){
