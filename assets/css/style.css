@@ -10,3 +10,11 @@
     font-size: 20px;
     font-family:'Roboto Mono', sans-serif;
 }
+
+.joke-button{
+    cursor: pointer;
+}
+
+.navbar-style{
+    font-family:'Roboto Mono', sans-serif;
+}
