@@ -29,3 +29,8 @@
     font-family:'Roboto Mono', sans-serif;
 }
 
+.favorites-button{ 
+    cursor: pointer;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: rgb(142, 116, 238);
+}
