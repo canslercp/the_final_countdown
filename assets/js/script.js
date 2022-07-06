@@ -67,12 +67,5 @@ async function getJoke(){
     jokeText.innerHTML = jokeObject.joke;
 }
 
-// function getJoke(){
-//     fetch('https://icanhazdadjoke.com/',{
-//         headers:{
-//             'Accept': 'application/json'
-//         }
-//     }).then(data=> data.json())
-//       .then(obj => jokeText.innerHTML = object.joke)
-// }
+
 
