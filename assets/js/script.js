@@ -53,7 +53,6 @@ diabtn.addEventListener("click",function(){
 ++iter;
 })
 
-var button = document.querySelector('.container button');
 var jokeText = document.querySelector('.container p');
 document.addEventListener('DOMContentLoaded', getJoke);
 
