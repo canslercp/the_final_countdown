@@ -13,8 +13,11 @@
 .joke{
     font-size: 15px;
     font-family:'Roboto Mono', sans-serif;
-    color: blue;
-}
+    background-image: linear-gradient(to left, violet, indigo, blue, green, rgb(173, 173, 9), orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      }
+
 
 .joke-button{
     cursor: pointer;
