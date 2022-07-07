@@ -16,6 +16,7 @@ if (Favobjs) {
 var requestUrlCovid = "https://data.cdc.gov/resource/n8mc-b4w4.json?$where=case_month between'2022-05' and '2022-05'";
 var state = [{ 'name': 'AL', 'count': 0 }, { 'name': 'AK', 'count': 0 }, { 'name': 'AZ', 'count': 0 }, { 'name': 'AR', 'count': 0 }, { 'name': 'CA', 'count': 0 }, { 'name': 'CO', 'count': 0 }, { 'name': 'CT', 'count': 0 }, { 'name': 'DE', 'count': 0 }, { 'name': 'FL', 'count': 0 }, { 'name': 'GA', 'count': 0 }, { 'name': 'HI', 'count': 0 }, { 'name': 'ID', 'count': 0 }, { 'name': 'IL', 'count': 0 }, { 'name': 'IN', 'count': 0 }, { 'name': 'IA', 'count': 0 }, { 'name': 'KS', 'count': 0 }, { 'name': 'KY', 'count': 0 }, { 'name': 'LA', 'count': 0 }, { 'name': 'ME', 'count': 0 }, { 'name': 'MD', 'count': 0 }, { 'name': 'MA', 'count': 0 }, { 'name': 'MI', 'count': 0 }, { 'name': 'MN', 'count': 0 }, { 'name': 'MS', 'count': 0 }, { 'name': 'MO', 'count': 0 }, { 'name': 'MT', 'count': 0 }, { 'name': 'NE', 'count': 0 }, { 'name': 'NV', 'count': 0 }, { 'name': 'NH', 'count': 0 }, { 'name': 'NJ', 'count': 0 }, { 'name': 'NM', 'count': 0 }, { 'name': 'NY', 'count': 0 }, { 'name': 'NC', 'count': 0 }, { 'name': 'ND', 'count': 0 }, { 'name': 'OH', 'count': 0 }, { 'name': 'OK', 'count': 0 }, { 'name': 'OR', 'count': 0 }, { 'name': 'PA', 'count': 0 }, { 'name': 'RI', 'count': 0 }, { 'name': 'SC', 'count': 0 }, { 'name': 'TN', 'count': 0 }, { 'name': 'TX', 'count': 0 }, { 'name': 'UT', 'count': 0 }, { 'name': 'VT', 'count': 0 }, { 'name': 'VA', 'count': 0 }, { 'name': 'WA', 'count': 0 }, { 'name': 'WV', 'count': 0 }, { 'name': 'WI', 'count': 0 }, { 'name': 'WY', 'count': 0 }]
 
+
 //Global variables for Jokes card
 var button = document.querySelector('.container button');
 var jokeText = document.querySelector('.container p');
@@ -40,7 +41,6 @@ diasave.addEventListener("click", function () {
   Favobjs.push(store.data[iter].fields.name);
   localStorage.setItem("Dias", JSON.stringify(Favobjs));
 })
-
 
 // CDC/COVID section
 $.ajax({
@@ -90,6 +90,10 @@ $.ajax({
   }
 });
 
+var button = document.querySelector('.container button');
+var jokeText = document.querySelector('.container p');
+document.addEventListener('DOMContentLoaded', getJoke);
+
 async function getJoke() {
   var jokeData = await fetch('https://icanhazdadjoke.com/', {
     headers: {
@@ -109,3 +113,4 @@ function addToFavorites() {
     window.localStorage.setItem('jokes', JSON.stringify([jokeText.innerHTML]))
   }
 }
+
