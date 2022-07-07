@@ -12,8 +12,6 @@ for(var i =0; i<Favobjs.length; i++){
 }
 }
 
-
-
 $.ajax({
   url: requestUrl,
   method: 'GET',
@@ -31,94 +29,6 @@ diasave.addEventListener("click",function(){
   Favobjs.push(store.data[iter].fields.name);
 localStorage.setItem("Dias", JSON.stringify(Favobjs));
 })
-
-var button = document.querySelector('.container button');
-var jokeText = document.querySelector('.container p');
-document.addEventListener('DOMContentLoaded', getJoke);
-
-async function getJoke(){
-    var jokeData = await fetch('https://icanhazdadjoke.com/', {
-        headers: {
-            'Accept': 'application/json'
-        }
-    });
-    var jokeObject = await jokeData.json(); 
-    jokeText.innerHTML = jokeObject.joke;
-}
-
-// function getJoke(){
-//     fetch('https://icanhazdadjoke.com/',{
-//         headers:{
-//             'Accept': 'application/json'
-//         }
-//     }).then(data=> data.json())
-//       .then(obj => jokeText.innerHTML = object.joke)
-// }
-
-
-
-
-
-var requestUrl = 'https://api.reliefweb.int/v1/disasters'
-var diatext = document.getElementById("dia-text");
-var diabtn = document.getElementById("diabtn");
-var diasave = document.getElementById("diasvbt");
-var store;
-
-var iter= 0;
-var Favobjs = [JSON.parse(localStorage.getItem("Dias"))]
-if(Favobjs){
-for(var i =0; i<Favobjs.length; i++){
-  console.log(Favobjs);
-}
-}
-
-
-
-$.ajax({
-  url: requestUrl,
-  method: 'GET',
-}).then(function (response) {
-  console.log('Ajax Reponse \n-------------');
-  store=response;
-});
-
-diabtn.addEventListener("click",function(){
-  diatext.textContent=store.data[iter].fields.name;
-++iter;
-})
-
-diasave.addEventListener("click",function(){
-  Favobjs.push(store.data[iter].fields.name);
-localStorage.setItem("Dias", JSON.stringify(Favobjs));
-})
-
-var button = document.querySelector('.container button');
-var jokeText = document.querySelector('.container p');
-document.addEventListener('DOMContentLoaded', getJoke);
-
-async function getJoke(){
-    var jokeData = await fetch('https://icanhazdadjoke.com/', {
-        headers: {
-            'Accept': 'application/json'
-        }
-    });
-    var jokeObject = await jokeData.json(); 
-    jokeText.innerHTML = jokeObject.joke;
-}
-
-// function getJoke(){
-//     fetch('https://icanhazdadjoke.com/',{
-//         headers:{
-//             'Accept': 'application/json'
-//         }
-//     }).then(data=> data.json())
-//       .then(obj => jokeText.innerHTML = object.joke)
-// }
-
-
-
-
 
 var requestUrlCovid = "https://data.cdc.gov/resource/n8mc-b4w4.json?$where=case_month between'2022-05' and '2022-05'";
 
@@ -140,7 +50,6 @@ $.ajax({
       var storeName;
       var storeCount;
      
-
       for (var x = 0; x < state.length; x++){
         
         if (dataState == state[x].name){
@@ -194,25 +103,6 @@ $.ajax({
     //   count the number of case for that state
     //   append to element in html (textContent= state + ': ' + res_state variable.length )
 
-var requestUrlDisasters = 'https://api.reliefweb.int/v1/disasters'
-var diatext = document.getElementById("dia-text");
-var diabtn = document.getElementById("diabtn");
-var store;
-var iter= 0;
-$.ajax({
-  url: requestUrlDisasters,
-  method: 'GET',
-}).then(function (response) {
-  console.log('Ajax Reponse \n-------------');
-  store=response;
-  console.log(store.data[iter].fields.name);
-});
-
-diabtn.addEventListener("click",function(){
-  diatext.textContent=store.data[iter].fields.name;
-++iter;
-})
-
 var button = document.querySelector('.container button');
 var jokeText = document.querySelector('.container p');
 document.addEventListener('DOMContentLoaded', getJoke);
@@ -226,15 +116,6 @@ async function getJoke(){
     var jokeObject = await jokeData.json();
     jokeText.innerHTML = jokeObject.joke;
 }
-// function getJoke(){
-//     fetch('https://icanhazdadjoke.com/',{
-//         headers:{
-//             'Accept': 'application/json'
-//         }
-//     }).then(data=> data.json())
-//       .then(obj => jokeText.innerHTML = object.joke)
-// }
-
 
 function addToFavorites(){ 
     var favoriteJokes = JSON.parse(window.localStorage.getItem('jokes'))
