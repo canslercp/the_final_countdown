@@ -53,7 +53,6 @@ diabtn.addEventListener("click",function(){
 ++iter;
 })
 
-var button = document.querySelector('.container button');
 var jokeText = document.querySelector('.container p');
 document.addEventListener('DOMContentLoaded', getJoke);
 
@@ -63,16 +62,25 @@ async function getJoke(){
             'Accept': 'application/json'
         }
     });
-    var jokeObject = await jokeData.json(); 
+    var jokeObject = await jokeData.json();
     jokeText.innerHTML = jokeObject.joke;
 }
 
-// function getJoke(){
-//     fetch('https://icanhazdadjoke.com/',{
-//         headers:{
-//             'Accept': 'application/json'
-//         }
-//     }).then(data=> data.json())
-//       .then(obj => jokeText.innerHTML = object.joke)
-// }
+
+function addToFavorites(){ 
+    var favoriteJokes = JSON.parse(window.localStorage.getItem('jokes'))
+
+    if(favoriteJokes && favoriteJokes.length) {
+        window.localStorage.setItem('jokes', JSON.stringify([...favoriteJokes, jokeText.innerHTML]))
+    } else {
+        window.localStorage.setItem('jokes', JSON.stringify([jokeText.innerHTML]))
+    }
+}
+
+
+
+
+
+
+
 
