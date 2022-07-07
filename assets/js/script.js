@@ -117,8 +117,6 @@ async function getJoke(){
     jokeText.innerHTML = jokeObject.joke;
 }
 
-// var favoriteJokes = document.getElementById('fav-joke');
-
 function addToFavorites(){ 
     var favoriteJokes = JSON.parse(window.localStorage.getItem('jokes'))
 
@@ -129,7 +127,6 @@ function addToFavorites(){
         window.localStorage.setItem('jokes', JSON.stringify([jokeText.innerHTML]))
     };
     
-    // var favoriteObject = await favoriteJokes.json();
-    // favoriteText.innerHTML = favoriteObject.joke;
+    
 }
 
