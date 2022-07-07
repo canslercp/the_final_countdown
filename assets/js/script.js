@@ -66,9 +66,12 @@ async function getJoke(){
     jokeText.innerHTML = jokeObject.joke;
 }
 
-function addToFavorites(){
-    window.localStorage.setItem('joke', jokeText.innerHTML )
-    }
+
+function addToFavorites(){ 
+    var favoriteJokes = window.localStorage.getItem('jokes')
+
+    window.localStorage.setItem('jokes', JSON.stringify(jokeText.innerHTML) )
+}
 
 
 
