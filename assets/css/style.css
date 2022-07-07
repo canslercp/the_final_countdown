@@ -110,3 +110,11 @@
 .joke-background{
     background-color: white;
 }
+
+.joke-generator{
+    font-family: 'Shrikhand', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
