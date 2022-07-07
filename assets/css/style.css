@@ -57,7 +57,11 @@
 .card-style{
     background: rgb(215, 212, 212);
     border-style: solid;
-    border-color:black;
+    border-color: rgb(101, 97, 97);
+    border-radius: 25px;;
+    padding: 20px;
+  
+
     margin-left: 20px;
     margin-top: 20px;
 }
