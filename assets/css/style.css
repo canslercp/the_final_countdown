@@ -44,6 +44,7 @@
     display:flex;
     justify-content: center;
     font-size: 50px;
+    
 }
 
 .subheader{
@@ -60,8 +61,6 @@
     border-color: rgb(101, 97, 97);
     border-radius: 25px;;
     padding: 20px;
-  
-
     margin-left: 20px;
     margin-top: 20px;
 }
