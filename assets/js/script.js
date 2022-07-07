@@ -47,7 +47,7 @@ $.ajax({
   url: requestUrlCovid,
   type: "GET",
   data: {
-    "$limit": 100,
+    "$limit": 1000,
   }
 }).done(function (data) {
   for (var i = 0; i < data.length; i++) {
@@ -62,7 +62,7 @@ $.ajax({
       //this function counts the total number of covid cases for each state
       if (dataState == state[x].name) {
         state[x].count++;
-        console.log(state[x]);
+        // console.log(state[x]);
   
         storeName = state[x].name;
         storeCount = state[x].count;
