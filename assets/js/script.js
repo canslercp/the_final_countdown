@@ -62,9 +62,18 @@ async function getJoke(){
             'Accept': 'application/json'
         }
     });
-    var jokeObject = await jokeData.json(); 
+    var jokeObject = await jokeData.json();
     jokeText.innerHTML = jokeObject.joke;
 }
+
+function addToFavorites(){
+    window.localStorage.setItem('joke', jokeText.innerHTML )
+    }
+
+
+
+
+
 
 
 
