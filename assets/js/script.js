@@ -38,7 +38,11 @@ $.ajax({
               })
 
               var saveStateBtn = document.getElementById('saveStateBtn');
-              
+              var favState = [JSON.parse(localStorage.getItem('state'))]
+              // if(favState){
+              //   for(var i = 0;)
+              // }
+
               saveStateBtn.addEventListener('click',function(){
                 window.localStorage.setItem()
               })

@@ -16,8 +16,7 @@
     background-image: linear-gradient(to left, violet, indigo, blue, green, rgb(218, 218, 3), orange, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-      }
-
+    }
 
 .joke-button{
     cursor: pointer;
@@ -27,4 +26,25 @@
 
 .navbar-style{
     font-family:'Roboto Mono', sans-serif;
+}
+
+.favorites-button{ 
+    cursor: pointer;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: rgb(142, 116, 238);
+}
+
+.pageTitle{
+    font-family: 'Roboto Mono', sans-serif;
+    display:flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.subheader{
+    font-family: 'Roboto Mono', sans-serif;
+    display:flex;
+    justify-content: center;
+    font-size: 25px;
+    
 }
