@@ -117,14 +117,19 @@ async function getJoke(){
     jokeText.innerHTML = jokeObject.joke;
 }
 
+// var favoriteJokes = document.getElementById('fav-joke');
+
 function addToFavorites(){ 
     var favoriteJokes = JSON.parse(window.localStorage.getItem('jokes'))
+
 
     if(favoriteJokes && favoriteJokes.length) {
         window.localStorage.setItem('jokes', JSON.stringify([...favoriteJokes, jokeText.innerHTML]))
     } else {
         window.localStorage.setItem('jokes', JSON.stringify([jokeText.innerHTML]))
-    }
+    };
+    
+    // var favoriteObject = await favoriteJokes.json();
+    // favoriteText.innerHTML = favoriteObject.joke;
 }
-
 
