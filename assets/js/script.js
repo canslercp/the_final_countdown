@@ -36,6 +36,12 @@ $.ajax({
               statetext.textContent = 'Positive COVID cases by state last month= ' + storeName + ': ' + storeCount;
               
               })
+
+              var saveStateBtn = document.getElementById('saveStateBtn');
+              
+              saveStateBtn.addEventListener('click',function(){
+                window.localStorage.setItem()
+              })
 //attemp at a drop down menu to select state data
               // var statetext = document.getElementById('statetext')
               // //select a state function ------------------------------------------------------>
