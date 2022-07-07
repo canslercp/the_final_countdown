@@ -92,3 +92,8 @@
     align-items: center;
 }
 
+.joke-button-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
