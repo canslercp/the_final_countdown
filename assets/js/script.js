@@ -46,6 +46,7 @@ $.ajax({
               saveStateBtn.addEventListener('click',function(){
                 window.localStorage.setItem()
               })
+              console.log(localStorage);
 //attemp at a drop down menu to select state data
               // var statetext = document.getElementById('statetext')
               // //select a state function ------------------------------------------------------>
