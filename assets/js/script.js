@@ -68,9 +68,13 @@ async function getJoke(){
 
 
 function addToFavorites(){ 
-    var favoriteJokes = window.localStorage.getItem('jokes')
+    var favoriteJokes = JSON.parse(window.localStorage.getItem('jokes'))
 
-    window.localStorage.setItem('jokes', JSON.stringify(jokeText.innerHTML) )
+    if(favoriteJokes && favoriteJokes.length) {
+        window.localStorage.setItem('jokes', JSON.stringify([...favoriteJokes, jokeText.innerHTML]))
+    } else {
+        window.localStorage.setItem('jokes', JSON.stringify([jokeText.innerHTML]))
+    }
 }
 
 
