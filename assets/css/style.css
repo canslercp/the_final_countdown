@@ -97,3 +97,12 @@
     justify-content: space-evenly;
 }
 
+.hover-feature:hover{
+    color:#ff5031;
+    font-size: larger;
+    transition: all 0.4s ease 0s;
+}
+
+.nav-pad{
+    padding-bottom: 15px;
+}
