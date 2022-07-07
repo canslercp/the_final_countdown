@@ -1,4 +1,65 @@
 
+var requestUrl = 'https://api.reliefweb.int/v1/disasters'
+var diatext = document.getElementById("dia-text");
+var diabtn = document.getElementById("diabtn");
+var diasave = document.getElementById("diasvbt");
+var store;
+
+var iter= 0;
+var Favobjs = [JSON.parse(localStorage.getItem("Dias"))]
+if(Favobjs){
+for(var i =0; i<Favobjs.length; i++){
+  console.log(Favobjs);
+}
+}
+
+
+
+$.ajax({
+  url: requestUrl,
+  method: 'GET',
+}).then(function (response) {
+  console.log('Ajax Reponse \n-------------');
+  store=response;
+});
+
+diabtn.addEventListener("click",function(){
+  diatext.textContent=store.data[iter].fields.name;
+++iter;
+})
+
+diasave.addEventListener("click",function(){
+  Favobjs.push(store.data[iter].fields.name);
+localStorage.setItem("Dias", JSON.stringify(Favobjs));
+})
+
+var button = document.querySelector('.container button');
+var jokeText = document.querySelector('.container p');
+document.addEventListener('DOMContentLoaded', getJoke);
+
+async function getJoke(){
+    var jokeData = await fetch('https://icanhazdadjoke.com/', {
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+    var jokeObject = await jokeData.json(); 
+    jokeText.innerHTML = jokeObject.joke;
+}
+
+// function getJoke(){
+//     fetch('https://icanhazdadjoke.com/',{
+//         headers:{
+//             'Accept': 'application/json'
+//         }
+//     }).then(data=> data.json())
+//       .then(obj => jokeText.innerHTML = object.joke)
+// }
+
+
+
+
+
 var requestUrlCovid = "https://data.cdc.gov/resource/n8mc-b4w4.json?$where=case_month between'2022-05' and '2022-05'";
 
 var state = [{'name':'AL','count':0},'AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM',{'name':'NY','count':0},'NC','ND','OH','OK','OR','PA','RI','SC','SC','TN','TX','UT','VT','VA','WA','WV','WI','WY']
