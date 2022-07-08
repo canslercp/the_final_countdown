@@ -12,7 +12,9 @@ The Final Countdown webpage uses the three languages we have learned in the firs
 
 ## Screenshot
 
-![A preview of the Final Countdown webpage](./assets/images/Screen%20Shot.png)
+![A preview of the Final Countdown webpage](./assets/images/main-page.png)
+![A preview of the Final Countdown webpage](./assets/images/main-page-2.png)
+![A preview of the Favorites webpage](./assets/images/favorites-page.png)
 
 ## Link to deploy
 
