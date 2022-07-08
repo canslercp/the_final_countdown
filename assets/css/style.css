@@ -61,6 +61,7 @@
     cursor: pointer;
     font-family: 'Roboto Mono', sans-serif;
     background-color: rgb(53, 150, 53);
+    padding: 10px 10px 10px 10px;
 }
 
 .navbar-style{
@@ -71,6 +72,7 @@
     cursor: pointer;
     font-family: 'Roboto Mono', sans-serif;
     background-color: rgb(142, 116, 238);
+    padding: 10px 10px 10px 10px;
 }
 
 .pageTitle{
