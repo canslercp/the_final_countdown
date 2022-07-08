@@ -79,6 +79,15 @@
     padding: 10px 10px 10px 10px;
 }
 
+.generate-despair{
+    cursor: pointer;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: rgb(125, 18, 18);
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+}
+
+
 .navbar-style{
     font-family:'Roboto Mono', sans-serif;
 }
@@ -192,4 +201,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.despair-btn{
+    cursor: pointer;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color:rgb(125, 18, 18);
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+}
+
+.sav-to-fav{
+    cursor: pointer;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color:#3d5a53;
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+}
+
+.despair-save-div{
+    display: flex;
+    justify-content: space-evenly;
 }
