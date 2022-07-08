@@ -13,7 +13,21 @@
     box-sizing: border-box;
 }
 
+.body-bg{
+    background-color: #3d5a53;
+
+}
+
 .joke-title{
+    font-size: 20px;
+    font-family:'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.covid-title{
     font-size: 20px;
     font-family:'Roboto Mono', sans-serif;
     display: flex;
@@ -80,6 +94,10 @@
     margin-top: 30px;
 }
 
+.bottom-cards-style{
+    margin-bottom: 30px;
+}
+
 .footer-font{
     font-family: 'Roboto Mono', sans-serif;;
 }
@@ -117,6 +135,12 @@
 
 .joke-background{
     background-color: white;
+    border-style: solid;
+    border-color: rgb(101, 97, 97);
+    border-radius: 15px;
+    margin-bottom: 20px;
+   
+
 }
 
 .joke-generator{
