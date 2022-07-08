@@ -78,6 +78,7 @@
     background-image: linear-gradient(to left, violet, rgb(114, 54, 156), rgb(66, 66, 250), green, rgb(218, 218, 3), orange, red);
     font-weight: bolder;
     padding: 10px 10px 10px 10px;
+    font-size: 15px;
 }
 
 .generate-despair{
@@ -86,6 +87,8 @@
     background-color: rgb(125, 18, 18);
     font-weight: bolder;
     padding: 10px 10px 10px 10px;
+    font-size: 15px;
+
 }
 
 
@@ -98,6 +101,7 @@
     font-family: 'Roboto Mono', sans-serif;
     background-color: #4d7269;
     padding: 10px 10px 10px 10px;
+    font-size: 15px;
 }
 
 .pageTitle{
@@ -177,6 +181,7 @@
 .joke-button-div{
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .hover-feature:hover{
@@ -212,6 +217,7 @@
     background-color:rgb(145, 44, 44);
     font-weight: bolder;
     padding: 10px 10px 10px 10px;
+    font-size: 15px;
 }
 
 .sav-to-fav{
@@ -220,6 +226,7 @@
     background-color:#4d7269;
     font-weight: bolder;
     padding: 10px 10px 10px 10px;
+    font-size: 15px;
 }
 
 .despair-save-div{
