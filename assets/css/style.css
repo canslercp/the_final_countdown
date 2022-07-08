@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
 
 /* font-family: 'Shrikhand', cursive; */
 /* font-family: 'Nosifer', cursive; */
@@ -13,23 +14,83 @@
     box-sizing: border-box;
 }
 
+.body-bg{
+    background-color: #3d5a53;
+
+}
+
 .joke-title{
     font-size: 20px;
     font-family:'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.joke{
+
+.covid-title{
+    font-size: 20px;
+    font-family:'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(33 37 41);
+}
+
+.disaster-title{
     font-size: 17px;
+    font-family:'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(33 37 41);
+}
+
+.temperature-title{
+    font-size: 20px;
+    font-family:'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(33 37 41);
+}
+
+.joke{
+    font-size: 19px;
     font-family:'Roboto Mono', sans-serif;
     background-image: linear-gradient(to left, violet, indigo, blue, green, rgb(218, 218, 3), orange, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
     }
 
 .joke-button{
     cursor: pointer;
     font-family: 'Roboto Mono', sans-serif;
-    background-color: rgb(53, 150, 53);
+    background-image: linear-gradient(to left, violet, rgb(114, 54, 156), rgb(66, 66, 250), green, rgb(218, 218, 3), orange, red);
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
 }
+
+.generate-despair{
+    cursor: pointer;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: rgb(125, 18, 18);
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+
+}
+
 
 .navbar-style{
     font-family:'Roboto Mono', sans-serif;
@@ -38,20 +99,26 @@
 .favorites-button{ 
     cursor: pointer;
     font-family: 'Roboto Mono', sans-serif;
-    background-color: rgb(142, 116, 238);
+    background-color: #4d7269;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
 }
 
 .pageTitle{
     font-family: 'Roboto Mono', sans-serif;
-    color:aliceblue;
+    color:rgb(215, 212, 212);
     display:flex;
     justify-content: center;
     font-size: 75px;
     background-image: url("../images/city-gcdf8dc542_1920.jpg");
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: solid;
+    border-top: solid;
+    border-color: rgb(215, 212, 212);
+    border-width: 10px;
 }
 
 .subheader{
@@ -65,11 +132,18 @@
 .card-style{
     background: rgb(215, 212, 212);
     border-style: solid;
-    border-color: rgb(101, 97, 97);
+    border-color: rgb(33 37 41);
+    border-width: 10px;
     border-radius: 25px;;
-    padding: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
+    padding: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 25px;
+}
+
+.bottom-cards-style{
+    margin-bottom: 30px;
 }
 
 .footer-font{
@@ -78,10 +152,11 @@
 
 .disaster-tracker{
     font-family: 'Metal Mania', cursive;
-    font-size: 40px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(33 37 41)
 }
 
 .covid-counter{
@@ -90,5 +165,103 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(33 37 41)
+    
 }
 
+.temperature-taker{
+    font-family: 'Eater', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(33 37 41);
+}
+
+.joke-button-div{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.hover-feature:hover{
+    color:#ff5031;
+    font-size: larger;
+    transition: all 0.4s ease 0s;
+}
+
+.nav-pad{
+    padding-bottom: 15px;
+}
+
+.joke-background{
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(101, 97, 97);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.joke-generator{
+    font-family: 'Shrikhand', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.despair-btn{
+    cursor: pointer;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color:rgb(145, 44, 44);
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+}
+
+.sav-to-fav{
+    cursor: pointer;
+    font-family: 'Roboto Mono', sans-serif;
+    background-color:#4d7269;
+    font-weight: bolder;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+}
+
+.despair-save-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.data-background{
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(101, 97, 97);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.data-text{
+    font-size: 19px;
+    font-family:'Roboto Mono', sans-serif;
+    color: rgb(33 37 41);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.favorites-titles{
+    font-size: 55px;
+    font-family:'Roboto Mono', sans-serif;
+    color: rgb(33 37 41);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

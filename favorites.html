@@ -42,18 +42,23 @@
             id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a href="#" class="nav-link active px-3">
+                    <a href="#saved-disasters" class="nav-link active px-3">
                         Disasters
                     </a>
                 </li>
                 <li class="nav-item active">
-                    <a href="#" class="nav-link active px-3">
+                    <a href="#saved-cdc" class="nav-link active px-3">
                         COVID Data
                     </a>
                 </li>
                 <li class="nav-item active ">
-                    <a href="#" class="nav-link active px-3" id="addFav">
+                    <a href="#saved-jokes" class="nav-link active px-3" id="addFav">
                         Jokes
+                    </a>
+                </li>
+                <li class="nav-item active ">
+                    <a href="#saved-global-warming" class="nav-link active px-3" id="addFav">
+                        Global Warming
                     </a>
                 </li>
             </ul>
@@ -62,36 +67,38 @@
         </div>
     </nav>
 
+    <div class="body-bg">
     <div class="pageTitle">
         My Favorites
     </div>
 
     <div class="container" >
-        Saved Disasters
+        <span class="favorites-titles" id="saved-disasters">Saved Disasters</span>
         <div class="row" id="savedia">
           
         </div>
-        Saved jokes
+        <span class="favorites-titles" id="saved-jokes">Saved Jokes</span>
         <div class="row" id="savejokes">
             
         </div>
-        Saved CDC
+        <span class="favorites-titles" id="saved-cdc">Saved Covid Data</span>
         <div class="row" id="savecdc">
             
         </div>
-        Placeholder
+        <span class="favorites-titles" id="saved-global-warming">Saved Global Warming Data</span>
         <div class="row">
-
-            //<div class="col subheader"
-            //style="border:1px solid black">
-            //Global Warming
-            //</div>
-            //<div class="col subheader" id="fav-joke"
-            //style="border:1px solid black">
-            //Jokes
-            //</div>
+<!-- 
+            <div class="col subheader"
+            style="border:1px solid black">
+            Global Warming
+            </div>
+            <div class="col subheader" id="fav-joke"
+            style="border:1px solid black">
+            Jokes
+            </div> -->
 
         </div>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
