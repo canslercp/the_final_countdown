@@ -88,7 +88,6 @@ $.ajax({
 });
 var stateiter=0;
 
-
   //button to save covid data to local storage
 saveStateBtn.addEventListener('click', function () {
   favState.push(statetext.textContent);
