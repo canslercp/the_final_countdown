@@ -35,6 +35,16 @@
     justify-content: center;
     text-align: center;
 }
+
+.disaster-title{
+    font-size: 20px;
+    font-family:'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .joke{
     font-size: 17px;
     font-family:'Roboto Mono', sans-serif;
