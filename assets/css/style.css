@@ -37,7 +37,7 @@
 }
 
 .disaster-title{
-    font-size: 20px;
+    font-size: 17px;
     font-family:'Roboto Mono', sans-serif;
     display: flex;
     align-items: center;
@@ -114,7 +114,7 @@
 
 .disaster-tracker{
     font-family: 'Metal Mania', cursive;
-    font-size: 40px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
