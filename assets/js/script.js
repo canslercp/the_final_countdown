@@ -130,6 +130,3 @@ function addToFavorites() {
   
 
 }
-
-
-
