@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
 
 /* font-family: 'Shrikhand', cursive; */
 /* font-family: 'Nosifer', cursive; */
@@ -37,6 +38,15 @@
 }
 
 .disaster-title{
+    font-size: 17px;
+    font-family:'Roboto Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.temperature-title{
     font-size: 17px;
     font-family:'Roboto Mono', sans-serif;
     display: flex;
@@ -128,6 +138,14 @@
 
 .covid-counter{
     font-family: 'Nosifer', cursive;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-taker{
+    font-family: 'Eater', cursive;
     font-size: 40px;
     display: flex;
     justify-content: center;
