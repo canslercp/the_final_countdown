@@ -20,6 +20,10 @@ The Final Countdown webpage uses the three languages we have learned in the firs
 
 https://canslercp.github.io/project_1/
 
+## Contributors
+
+Corbin Cansler, Charles Wright & Mary Margaret Taylor
+
 ## Resources
 
 * Centers for Disease Control and Prevention, COVID-19 Response. COVID-19 Case Surveillance Public Use Data with Geography (version date: June 06, 2022).
