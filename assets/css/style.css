@@ -95,7 +95,7 @@
 .favorites-button{ 
     cursor: pointer;
     font-family: 'Roboto Mono', sans-serif;
-    background-color: rgb(62, 179, 33);
+    background-color: #4d7269;
     padding: 10px 10px 10px 10px;
 }
 
@@ -204,7 +204,7 @@
 .despair-btn{
     cursor: pointer;
     font-family: 'Roboto Mono', sans-serif;
-    background-color:rgb(125, 18, 18);
+    background-color:rgb(145, 44, 44);
     font-weight: bolder;
     padding: 10px 10px 10px 10px;
 }
@@ -212,7 +212,7 @@
 .sav-to-fav{
     cursor: pointer;
     font-family: 'Roboto Mono', sans-serif;
-    background-color:#3d5a53;
+    background-color:#4d7269;
     font-weight: bolder;
     padding: 10px 10px 10px 10px;
 }
@@ -228,4 +228,15 @@
     border-color: rgb(101, 97, 97);
     border-radius: 15px;
     margin-bottom: 20px;
+}
+
+.data-text{
+    font-size: 17px;
+    font-family:'Roboto Mono', sans-serif;
+    color: rgb(33 37 41);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
