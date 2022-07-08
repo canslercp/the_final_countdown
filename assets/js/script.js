@@ -104,8 +104,8 @@ saveStateBtn.addEventListener('click', function () {
       console.log(state[stateiter].name);
     })
 
-var button = document.querySelector('.container button');
-var jokeText = document.querySelector('.container p');
+var button = document.querySelector('.joke-button');
+var jokeText = document.querySelector('.joke');
 document.addEventListener('DOMContentLoaded', getJoke);
 
 async function getJoke() {

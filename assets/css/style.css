@@ -191,8 +191,6 @@
     border-color: rgb(101, 97, 97);
     border-radius: 15px;
     margin-bottom: 20px;
-   
-
 }
 
 .joke-generator{
@@ -222,4 +220,12 @@
 .despair-save-div{
     display: flex;
     justify-content: space-evenly;
+}
+
+.data-background{
+    background-color: white;
+    border-style: solid;
+    border-color: rgb(101, 97, 97);
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
