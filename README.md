@@ -18,7 +18,7 @@ The Final Countdown webpage uses the three languages we have learned in the firs
 
 ## Link to deploy
 
-https://canslercp.github.io/project_1/
+https://canslercp.github.io/the_final_countdown/
 
 ## Contributors
 
